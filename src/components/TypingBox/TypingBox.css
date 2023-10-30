@@ -1,0 +1,21 @@
+.correct-char {
+	color: green !important;
+}
+.wrong-char {
+	color: red !important;
+}
+
+.cursor {
+	border-left: 1px solid white;
+	animation: blink 1s infinite ease-in-out;
+}
+.cursor-end {
+	border-right: 1px solid white;
+	animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+	50% {
+		border-color: transparent;
+	}
+}
