@@ -69,7 +69,6 @@ const TBtnGroup = ({ toggleDuration, timerDuration, startTyping }) => {
 				TransitionComponent={Fade}
 				sx={{ marginTop: '-3.75rem', marginLeft: '0.75rem' }}>
 				{colorThemes.map((cPalette, index) => {
-					console.log(cPalette)
 					return (
 						<MenuItem
 							key={index}

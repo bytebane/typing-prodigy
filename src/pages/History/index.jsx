@@ -19,7 +19,7 @@ const History = () => {
 	const isHistory = routeLocation.pathname === routePath.HISTORY
 
 	const { wpmList, accuracyList, totalCharsList } = FirestoreData()
-	const { isUserAuthenticated } = BaseContextData()
+	const { isLoading, isUserAuthenticated } = BaseContextData()
 
 	//? Accuracy Calculation
 	const getAccuracy = () => {
@@ -99,7 +99,7 @@ const History = () => {
 	}
 
 	return (
-		isUserAuthenticated && (
+		!isLoading && (
 			<Container sx={{ my: 2, width: '100%', height: 'calc(100% - 100px)', position: 'relative' }}>
 				{/* <IconButton
 				sx={{ position: 'absolute', top: 0, left: 10 }}
@@ -150,7 +150,7 @@ const History = () => {
 					/>
 				)}
 
-				{<HistoryChart />}
+				{isUserAuthenticated && <HistoryChart />}
 			</Container>
 		)
 	)
