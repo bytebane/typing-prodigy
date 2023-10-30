@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Box, Container, Typography } from '@mui/material'
 import { createRef, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import './TypingBox.css'

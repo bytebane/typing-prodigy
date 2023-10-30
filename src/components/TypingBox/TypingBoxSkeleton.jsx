@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import { Container, Skeleton, Typography } from '@mui/material'
 
 const TypingBoxSkeleton = ({ animate = true }) => {
